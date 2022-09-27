@@ -6,8 +6,8 @@ defmodule Tablature do
     |> Enum.map(fn line -> parse_line(line) end)
     |> List.flatten()
     |> Enum.sort_by(fn {_c,p} -> p end)
-    |> Enum.map(fn e -> elem(e, 0) end)
-    |> Enum.join(" ")
+    # |> Enum.map(fn e -> elem(e, 0) end)
+    # |> Enum.join(" ")
     # |> String.trim()
     # |> Enum.filter(fn lista -> lista != [] end)
     # |> Enum.zip
